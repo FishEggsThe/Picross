@@ -1,6 +1,6 @@
 rows = 5
 columns = 5
-blockSize = Obj_Block.sprite_width
+blockSize = sprite_width
 numberLabels = array_create(rows, "")
 numberLabelsX = array_create(rows, "")
 numberLabelsY = array_create(columns, "")
@@ -18,8 +18,17 @@ for(var i = 0; i < rows; i++){
 		grid[i][j] = CreateBlock(x+xOffset, y+yOffset, choose(true, false), c_black)
 		numbers += string(grid[i][j].blockData.desiredState)
 	}
+	
 	numberLabels[i] = numbers
-	show_debug_message(numberLabels[i])
+	//show_debug_message(numberLabels[i])
+	for (var a = 0; a < i+1; a++) {
+		var test = ""
+		for (var b = 0; b < columns; b++) {
+			test += string(grid[a][b].blockData.desiredState)
+		}
+		show_debug_message(test)
+	}
+	show_debug_message("")
 }
 
 // Y Labels
@@ -37,7 +46,6 @@ for(var i = 0; i < columns; i++){
 	for(var j = 0; j < rows; j++){
 		nums += string(string_copy(numberLabels[j], i+1, 1))
 	}
-	show_debug_message(nums)
 	
 	var numList = string_split(nums, "0")
 	for(var k = 0; k < array_length(numList); k++){
