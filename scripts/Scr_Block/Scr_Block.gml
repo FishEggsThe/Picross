@@ -8,7 +8,25 @@ function Block(ds, c) constructor
 
     static ChangeState = function(changeState)
     {
-        state = changeState
+        if state == changeState
+			state = 0
+		else
+			state = changeState
+		
+		switch (state){
+			case 0:
+				sprite_index = Spr_BlockTest
+				show_debug_message("Normal!")
+				break
+			case 1:
+				sprite_index = Spr_BlockSmashedTest
+				show_debug_message("Smashed!")
+				break
+			case 2:
+				sprite_index = Spr_BlockMarkedTest
+				show_debug_message("Marked!")
+				break
+		}
     }
 	static ChangeToColor = function()
 	{
