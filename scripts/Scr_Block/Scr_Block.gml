@@ -4,7 +4,7 @@ function Block(ds, c) constructor
 	// color = c
     blockColor = (desiredState ? c_black : c_white);
 	state = 0
-	
+	sprite = Spr_BlockTest
 
     static ChangeState = function(changeState)
     {
@@ -15,15 +15,15 @@ function Block(ds, c) constructor
 		
 		switch (state){
 			case 0:
-				sprite_index = Spr_BlockTest
+				sprite = Spr_BlockTest
 				show_debug_message("Normal!")
 				break
 			case 1:
-				sprite_index = Spr_BlockSmashedTest
+				sprite = Spr_BlockSmashedTest
 				show_debug_message("Smashed!")
 				break
 			case 2:
-				sprite_index = Spr_BlockMarkedTest
+				sprite = Spr_BlockMarkedTest
 				show_debug_message("Marked!")
 				break
 		}
