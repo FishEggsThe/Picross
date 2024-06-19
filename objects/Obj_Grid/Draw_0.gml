@@ -1,8 +1,13 @@
 for(var i = 0; i < rows; i++){
 	for(var j = 0; j < columns; j++){
-		//draw_set_colour(grid[i][i].blockColor)
-		draw_set_colour(c_black)
-		draw_rectangle(i*10, j*10, (i*10)+10, (j*10)+10, false)
+		var xOffset = i*100
+		var yOffset = j*100
+		draw_set_color(grid[i][j].blockColor)
+		//draw_set_color(choose(c_white, c_black))
+		draw_rectangle(xOffset, yOffset, (xOffset)+offset, (yOffset)+offset, false)
+		
+		draw_set_color(c_red)
+		draw_text(xOffset, yOffset, grid[i][j].desiredState)
 	}
 }
 
