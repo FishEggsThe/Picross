@@ -14,3 +14,8 @@ for (var i = 0; i < rows; i++) {
 		draw_text(j*50, i*50, grid[i][j].blockData.desiredState)
 	}
 }
+
+
+draw_set_halign(fa_center)
+if gridComplete
+	draw_text_transformed(room_width/2, room_height/2, "Grid Complete!!!", 5, 5, sin(current_time))

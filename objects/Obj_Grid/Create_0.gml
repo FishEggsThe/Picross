@@ -5,6 +5,8 @@ numberLabels = array_create(rows, "")
 numberLabelsX = array_create(rows, "")
 numberLabelsY = array_create(columns, "")
 
+gridComplete = false
+
 
 grid = array_create_ext(rows, function() {
   return array_create(columns, noone)
