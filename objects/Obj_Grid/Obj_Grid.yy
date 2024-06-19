@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_BlockTest",
-    "path":"sprites/Spr_BlockTest/Spr_BlockTest.yy",
+    "name":"Spr_BlockMarkedTest",
+    "path":"sprites/Spr_BlockMarkedTest/Spr_BlockMarkedTest.yy",
   },
   "spriteMaskId":null,
   "visible":true,

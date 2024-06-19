@@ -6,8 +6,9 @@ numberLabelsX = array_create(rows, "")
 numberLabelsY = array_create(columns, "")
 
 
-
-grid = array_create(rows, array_create(columns, noone))
+grid = array_create_ext(rows, function() {
+  return array_create(columns, noone)
+})
 
 // Grid Creation
 for(var i = 0; i < rows; i++){
