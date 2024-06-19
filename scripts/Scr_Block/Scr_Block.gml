@@ -36,7 +36,7 @@ function Block(ds, c) constructor
 
 function CreateBlock(bX, bY, ds, c)
 {
-	block = instance_create_layer(bX, bY, "Instances", Obj_Block)
+	var block = instance_create_layer(bX, bY, "Instances", Obj_Block)
 	block.blockData = new Block(ds, c)
 	return block
 }
