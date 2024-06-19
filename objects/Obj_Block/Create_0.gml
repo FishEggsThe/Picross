@@ -1,0 +1,1 @@
+blockData = new Block(false, c_white)

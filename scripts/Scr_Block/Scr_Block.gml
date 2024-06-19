@@ -15,3 +15,10 @@ function Block(ds, c) constructor
 		image_blend = blockColor
 	}
 }
+
+function CreateBlock(bX, bY, ds, c)
+{
+	block = instance_create_layer(bX, bY, "Instances", Obj_Block)
+	block.blockData = new Block(ds, c)
+	return block
+}

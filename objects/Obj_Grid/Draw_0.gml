@@ -1,4 +1,4 @@
-for(var i = 0; i < rows; i++){
+/*for(var i = 0; i < rows; i++){
 	for(var j = 0; j < columns; j++){
 		var xOffset = i*100
 		var yOffset = j*100
@@ -9,7 +9,7 @@ for(var i = 0; i < rows; i++){
 		draw_set_color(c_red)
 		draw_text(xOffset, yOffset, grid[i][j].desiredState)
 	}
-}
+}*/
 
 //draw_text(x, y, block.desiredState)
 //draw_text(x, y+24, block.blockColor)
