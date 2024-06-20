@@ -1,8 +1,4 @@
 function GenerateGrid(){
-	grid = array_create_ext(rows, function() {
-	  return array_create(columns, noone)
-	})
-	
 	// Grid Creation
 	for(var i = 0; i < rows; i++){
 		var numbers = ""
