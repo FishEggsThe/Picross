@@ -17,5 +17,9 @@ for (var i = 0; i < rows; i++) {
 
 
 draw_set_halign(fa_center)
-if gridComplete
-	draw_text_transformed(room_width/2, room_height/2, "Grid Complete!!!", 5, 5, sin(current_time))
+if gridComplete{
+	completeTextSize = clamp(completeTextSize+completeTextSizeIncrease, 0, completeTextSizeMax)
+
+	draw_text_transformed(room_width/2, room_height/2, "Grid Complete!!!", 
+						  completeTextSize, completeTextSize, sin(current_time))
+}

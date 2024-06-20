@@ -39,6 +39,7 @@
     {"id":{"name":"Obj_Grid","path":"objects/Obj_Grid/Obj_Grid.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Scr_Block","path":"scripts/Scr_Block/Scr_Block.yy",},},
+    {"id":{"name":"Scr_Grid","path":"scripts/Scr_Grid/Scr_Grid.yy",},},
     {"id":{"name":"Spr_BlockMarkedTest","path":"sprites/Spr_BlockMarkedTest/Spr_BlockMarkedTest.yy",},},
     {"id":{"name":"Spr_BlockSmashedTest","path":"sprites/Spr_BlockSmashedTest/Spr_BlockSmashedTest.yy",},},
     {"id":{"name":"Spr_BlockTest","path":"sprites/Spr_BlockTest/Spr_BlockTest.yy",},},
