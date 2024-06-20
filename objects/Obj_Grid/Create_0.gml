@@ -1,9 +1,9 @@
-rows = 5
-columns = 5
+rows = 10
+columns = 10
 blockSize = sprite_width
 numberLabels = array_create(rows, "")
-numberLabelsX = array_create(rows, "")
-numberLabelsY = array_create(columns, "")
+numberLabelsX = array_create(columns, "")
+numberLabelsY = array_create(rows, "")
 
 gridComplete = false
 
@@ -24,15 +24,16 @@ for(var i = 0; i < rows; i++){
 	
 	numberLabels[i] = numbers
 	//show_debug_message(numberLabels[i])
-	for (var a = 0; a < i+1; a++) {
+	/*for (var a = 0; a < i+1; a++) {
 		var test = ""
 		for (var b = 0; b < columns; b++) {
 			test += string(grid[a][b].blockData.desiredState)
 		}
 		show_debug_message(test)
 	}
-	show_debug_message("")
+	show_debug_message("")*/
 }
+show_debug_message("sml sucks")
 
 // Y Labels
 for(var i = 0; i < rows; i++){
@@ -42,6 +43,7 @@ for(var i = 0; i < rows; i++){
 			numberLabelsY[i] += (" " + string(string_length(numList[j])))
 	}
 }
+show_debug_message("Chef peepee")
 
 // X Labels
 for(var i = 0; i < columns; i++){
@@ -51,8 +53,9 @@ for(var i = 0; i < columns; i++){
 	}
 	
 	var numList = string_split(nums, "0")
-	for(var k = 0; k < array_length(numList); k++){
-		if string_length(numList[k]) > 0
-			numberLabelsX[i] += (string(string_length(numList[k])) + "\n")
+	for(var j = 0; j < array_length(numList); j++){
+		if string_length(numList[j]) > 0
+			numberLabelsX[i] += (string(string_length(numList[j])) + "\n")
 	}
 }
+show_debug_message(":(")

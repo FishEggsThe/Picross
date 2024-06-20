@@ -35,6 +35,7 @@
   "name":"Picross",
   "resources":[
     {"id":{"name":"Obj_Block","path":"objects/Obj_Block/Obj_Block.yy",},},
+    {"id":{"name":"Obj_Control","path":"objects/Obj_Control/Obj_Control.yy",},},
     {"id":{"name":"Obj_Grid","path":"objects/Obj_Grid/Obj_Grid.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Scr_Block","path":"scripts/Scr_Block/Scr_Block.yy",},},
