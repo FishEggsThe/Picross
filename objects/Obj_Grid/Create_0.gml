@@ -3,12 +3,12 @@ if instance_number(Obj_Grid) > 1 {
 	instance_destroy()
 }
 
-rows = 5
-columns = 5
+rows = 15
+columns = 15
 blockSize = sprite_width
-/*x = blockSize; y = blockSize
-room_width = (columns+2)*blockSize
-room_height = (rows+2)*blockSize*/
+x = 2.75*blockSize; y = 2.75*blockSize
+room_width = (columns+4)*blockSize
+room_height = (rows+4)*blockSize
 
 numberLabels = array_create(rows, "")
 numberLabelsX = array_create(columns, "")
@@ -16,8 +16,8 @@ numberLabelsY = array_create(rows, "")
 
 gridComplete = false
 completeTextSize = 0
-completeTextSizeMax = 5
-completeTextSizeIncrease = 0.05
+completeTextSizeMax = 2.5*(columns/5)
+completeTextSizeIncrease = 0.025*(columns/5)
 
 
 // Grid Creation

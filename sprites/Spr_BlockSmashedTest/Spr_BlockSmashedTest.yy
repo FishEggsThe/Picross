@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"Spr_BlockSmashedTest",
   "bboxMode":0,
-  "bbox_bottom":99,
+  "bbox_bottom":49,
   "bbox_left":0,
-  "bbox_right":99,
+  "bbox_right":49,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":100,
+  "height":50,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"3bf21dcd-925d-4c89-ad36-0a59b8d429a4","blendMode":0,"displayName":"default","isLocked":false,"name":"3bf21dcd-925d-4c89-ad36-0a59b8d429a4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":100,
+  "width":50,
 }
