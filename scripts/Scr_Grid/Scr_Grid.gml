@@ -1,4 +1,10 @@
-function GenerateGrid(r, c, s){
+function ResetGridLines()
+{
+	gridLinesX = -100000
+	gridLinesY = -100000
+}
+
+function GenerateGrid(r, c){
 	// Grid Creation
 	for(var i = 0; i < r; i++){
 		var numbers = ""
@@ -36,7 +42,6 @@ function GenerateGrid(r, c, s){
 	}
 	
 	with instance_create_layer(x, y, "Instances", Obj_GridFrame) {
-		size = s
 		width = c
 		height = r
 	}

@@ -3,10 +3,11 @@ if instance_number(Obj_Grid) > 1 {
 	instance_destroy()
 }
 
-rows = 5
-columns = 5
+rows = 15
+columns = 15
 blockSize = sprite_width
-x = 2.75*blockSize; y = 2.75*blockSize
+offset = 2.75*blockSize
+x = offset; y = offset
 room_width = (columns+4)*blockSize
 room_height = (rows+4)*blockSize
 depth = -10
@@ -19,13 +20,15 @@ gridComplete = false
 completeTextSize = 0
 completeTextSizeMax = 2.5*(columns/5)
 completeTextSizeIncrease = 0.025*(columns/5)
+gridLinesX = -100000
+gridLinesY = -100000
 
 
 // Grid Creation
 grid = array_create_ext(rows, function() {
 	return array_create(columns, noone) // Wasn't recognizing variable here in script for whatever reason so back here it goes
 })
-GenerateGrid(rows, columns, blockSize)
+GenerateGrid(rows, columns)
 show_debug_message(numberLabels)
 show_debug_message(numberLabelsX)
 show_debug_message(numberLabelsY)

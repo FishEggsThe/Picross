@@ -17,8 +17,9 @@ if !gridComplete {
 		
 	var nearestBlock = instance_nearest(mouse_x-blockSize/2, mouse_y-blockSize/2, Obj_Block)
 	if position_meeting(mouse_x, mouse_y, nearestBlock) {
-		x=x
+		gridLinesX = nearestBlock.x
+		gridLinesY = nearestBlock.y
 	} else {
-		
+		ResetGridLines()
 	}
 }
