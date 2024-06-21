@@ -3,13 +3,14 @@ if instance_number(Obj_Grid) > 1 {
 	instance_destroy()
 }
 
-rows = 10
+rows = 5
 columns = 10
+roomSize = (rows >= columns ? rows : columns)
 blockSize = sprite_width
 offset = 3*blockSize
 x = offset; y = offset
-room_width = (columns+4)*blockSize
-room_height = (rows+4)*blockSize
+room_width = (roomSize+4)*blockSize
+room_height = (roomSize+4)*blockSize
 depth = -10
 
 numberLabels = array_create(rows, "")
