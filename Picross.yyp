@@ -45,6 +45,7 @@
     {"id":{"name":"Rm_Menu","path":"rooms/Rm_Menu/Rm_Menu.yy",},},
     {"id":{"name":"Scr_Block","path":"scripts/Scr_Block/Scr_Block.yy",},},
     {"id":{"name":"Scr_Grid","path":"scripts/Scr_Grid/Scr_Grid.yy",},},
+    {"id":{"name":"Msk_Block","path":"sprites/Msk_Block/Msk_Block.yy",},},
     {"id":{"name":"Spr_BlockMarkedTest","path":"sprites/Spr_BlockMarkedTest/Spr_BlockMarkedTest.yy",},},
     {"id":{"name":"Spr_BlockSmashedTest","path":"sprites/Spr_BlockSmashedTest/Spr_BlockSmashedTest.yy",},},
     {"id":{"name":"Spr_BlockTest","path":"sprites/Spr_BlockTest/Spr_BlockTest.yy",},},
@@ -52,8 +53,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Rm_Menu","path":"rooms/Rm_Menu/Rm_Menu.yy",},},
     {"roomId":{"name":"Rm_GridGame","path":"rooms/Rm_GridGame/Rm_GridGame.yy",},},
+    {"roomId":{"name":"Rm_Menu","path":"rooms/Rm_Menu/Rm_Menu.yy",},},
     {"roomId":{"name":"Rm_GridCreate","path":"rooms/Rm_GridCreate/Rm_GridCreate.yy",},},
   ],
   "templateType":"game",
