@@ -35,10 +35,14 @@
   "name":"Picross",
   "resources":[
     {"id":{"name":"Obj_Block","path":"objects/Obj_Block/Obj_Block.yy",},},
+    {"id":{"name":"Obj_Button","path":"objects/Obj_Button/Obj_Button.yy",},},
+    {"id":{"name":"Obj_ButtonGame","path":"objects/Obj_ButtonGame/Obj_ButtonGame.yy",},},
     {"id":{"name":"Obj_Control","path":"objects/Obj_Control/Obj_Control.yy",},},
     {"id":{"name":"Obj_Grid","path":"objects/Obj_Grid/Obj_Grid.yy",},},
     {"id":{"name":"Obj_GridFrame","path":"objects/Obj_GridFrame/Obj_GridFrame.yy",},},
+    {"id":{"name":"Rm_GridCreate","path":"rooms/Rm_GridCreate/Rm_GridCreate.yy",},},
     {"id":{"name":"Rm_GridGame","path":"rooms/Rm_GridGame/Rm_GridGame.yy",},},
+    {"id":{"name":"Rm_Menu","path":"rooms/Rm_Menu/Rm_Menu.yy",},},
     {"id":{"name":"Scr_Block","path":"scripts/Scr_Block/Scr_Block.yy",},},
     {"id":{"name":"Scr_Grid","path":"scripts/Scr_Grid/Scr_Grid.yy",},},
     {"id":{"name":"Spr_BlockMarkedTest","path":"sprites/Spr_BlockMarkedTest/Spr_BlockMarkedTest.yy",},},
@@ -48,7 +52,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Rm_Menu","path":"rooms/Rm_Menu/Rm_Menu.yy",},},
     {"roomId":{"name":"Rm_GridGame","path":"rooms/Rm_GridGame/Rm_GridGame.yy",},},
+    {"roomId":{"name":"Rm_GridCreate","path":"rooms/Rm_GridCreate/Rm_GridCreate.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

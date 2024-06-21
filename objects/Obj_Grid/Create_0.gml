@@ -3,8 +3,8 @@ if instance_number(Obj_Grid) > 1 {
 	instance_destroy()
 }
 
-rows = 5
-columns = 10
+rows = 10
+columns = 15
 roomSize = (rows >= columns ? rows : columns)
 blockSize = sprite_width
 offset = 3*blockSize
