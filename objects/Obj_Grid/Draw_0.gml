@@ -13,14 +13,27 @@ for(var i = 0; i < rows; i++){
 	draw_text(x-15, y+blockSize/2+i*blockSize, numberLabelsY[i])
 }
 
+// Divide Grid by 5's
+draw_set_color(c_dkgray)
+for(var i = 5; i < columns; i+=5){
+	draw_line_width(offset+blockSize*i, offset, offset+blockSize*i, offset+blockSize*rows, 6)
+}
+
+for(var i = 5; i < rows; i+=5){
+	draw_line_width(offset, offset+blockSize*i, offset+blockSize*columns, offset+blockSize*i, 6)
+}
+
 // Selected Block
-if !gridComplete
+draw_set_color(c_red)
+if !gridComplete {
+	var lw = 2
 	for(var i = 0; i < 2; i++) {
 		// X
-		draw_line_width(gridLinesX+blockSize*i, offset-blockSize, gridLinesX+blockSize*i, offset+blockSize*rows, 6)
+		draw_line_width(gridLinesX+blockSize*i, offset-blockSize, gridLinesX+blockSize*i, offset+blockSize*rows, lw)
 		// Y
-		draw_line_width(offset-blockSize, gridLinesY+blockSize*i, offset+blockSize*columns, gridLinesY+blockSize*i, 6)
+		draw_line_width(offset-blockSize, gridLinesY+blockSize*i, offset+blockSize*columns, gridLinesY+blockSize*i, lw)
 	}
+}
 else {
 	ResetGridLines()
 }

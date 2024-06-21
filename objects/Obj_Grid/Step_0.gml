@@ -8,7 +8,7 @@ if !gridComplete {
 					if grid[i][j].blockData.state != 1
 						gridComplete = false
 				
-				else if !grid[i][j].blockData.desiredState
+				if !grid[i][j].blockData.desiredState
 					if grid[i][j].blockData.state == 1
 						gridComplete = false
 			}
