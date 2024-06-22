@@ -1,4 +1,5 @@
-if ((instance_exists(Obj_Grid) && !Obj_Grid.gridComplete) || !instance_exists(Obj_Grid)) {
+if ((instance_exists(Obj_Grid) && !Obj_Grid.gridComplete) 
+	 || !blockData.onGrid) {
 	if position_meeting(mouse_x, mouse_y, id){
 		if mouse_check_button_pressed(mb_left)
 			blockData.ChangeState(1)
