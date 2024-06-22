@@ -33,5 +33,3 @@ GenerateGrid(rows, columns)
 show_debug_message(numberLabels)
 show_debug_message(numberLabelsX)
 show_debug_message(numberLabelsY)
-
-

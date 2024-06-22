@@ -1,10 +1,11 @@
-function Block(ds, c) constructor
+function Block(ds, c, g) constructor
 {
     desiredState = ds;
 	// color = c
     blockColor = (desiredState ? c_black : c_white);
 	state = 0
 	sprite = Spr_BlockTest
+	onGrid = g
 
     static ChangeState = function(changeState)
     {
@@ -23,6 +24,8 @@ function Block(ds, c) constructor
 				show_debug_message("Smashed!")
 				break
 			case 2:
+				if room != Rm_GridGame
+					break
 				sprite = Spr_BlockMarkedTest
 				show_debug_message("Marked!")
 				break
@@ -34,9 +37,9 @@ function Block(ds, c) constructor
 	}
 }
 
-function CreateBlock(bX, bY, ds, c)
+function CreateBlock(bX, bY, ds, c, g)
 {
 	var block = instance_create_layer(bX, bY, "Instances", Obj_Block)
-	block.blockData = new Block(ds, c)
+	block.blockData = new Block(ds, c, g)
 	return block;
 }

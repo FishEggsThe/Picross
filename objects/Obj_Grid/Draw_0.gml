@@ -1,16 +1,18 @@
-// Top Number Labels
-draw_set_color(c_red)
-draw_set_valign(fa_top)
-draw_set_halign(fa_center)
-for(var i = 0; i < columns; i++){
-	draw_text(x+blockSize/2+i*blockSize, y-10-string_height(numberLabelsX[i]), numberLabelsX[i])
-}
+if room == Rm_GridGame {
+	// Top Number Labels
+	draw_set_color(c_red)
+	draw_set_valign(fa_top)
+	draw_set_halign(fa_center)
+	for(var i = 0; i < columns; i++){
+		draw_text(x+blockSize/2+i*blockSize, y-10-string_height(numberLabelsX[i]), numberLabelsX[i])
+	}
 
-// Side Number Labels
-draw_set_valign(fa_middle)
-draw_set_halign(fa_right)
-for(var i = 0; i < rows; i++){
-	draw_text(x-15, y+blockSize/2+i*blockSize, numberLabelsY[i])
+	// Side Number Labels
+	draw_set_valign(fa_middle)
+	draw_set_halign(fa_right)
+	for(var i = 0; i < rows; i++){
+		draw_text(x-15, y+blockSize/2+i*blockSize, numberLabelsY[i])
+	}
 }
 
 // Divide Grid by 5's

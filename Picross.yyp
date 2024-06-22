@@ -36,7 +36,9 @@
   "resources":[
     {"id":{"name":"Obj_Block","path":"objects/Obj_Block/Obj_Block.yy",},},
     {"id":{"name":"Obj_Button","path":"objects/Obj_Button/Obj_Button.yy",},},
+    {"id":{"name":"Obj_ButtonCreate","path":"objects/Obj_ButtonCreate/Obj_ButtonCreate.yy",},},
     {"id":{"name":"Obj_ButtonGame","path":"objects/Obj_ButtonGame/Obj_ButtonGame.yy",},},
+    {"id":{"name":"Obj_ButtonMenu","path":"objects/Obj_ButtonMenu/Obj_ButtonMenu.yy",},},
     {"id":{"name":"Obj_Control","path":"objects/Obj_Control/Obj_Control.yy",},},
     {"id":{"name":"Obj_Grid","path":"objects/Obj_Grid/Obj_Grid.yy",},},
     {"id":{"name":"Obj_GridFrame","path":"objects/Obj_GridFrame/Obj_GridFrame.yy",},},

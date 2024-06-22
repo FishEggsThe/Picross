@@ -1,22 +1,31 @@
 if !gridComplete {
 	if mouse_check_button_pressed(mb_left) {
-		gridComplete = true
-		for (var i = 0; i < rows; i++) {
-			for (var j = 0; j < columns; j++) {
+		if (room == Rm_GridGame) {
+			gridComplete = true
+			for (var i = 0; i < rows; i++) {
+				for (var j = 0; j < columns; j++) {
 		
-				if grid[i][j].blockData.desiredState
-					if grid[i][j].blockData.state != 1
-						gridComplete = false
+					if grid[i][j].blockData.desiredState
+						if grid[i][j].blockData.state != 1
+							gridComplete = false
 				
-				if !grid[i][j].blockData.desiredState
-					if grid[i][j].blockData.state == 1
-						gridComplete = false
+					if !grid[i][j].blockData.desiredState
+						if grid[i][j].blockData.state == 1
+							gridComplete = false
+				}
+			}
+		} 
+		else { // room == Rm_GridCreate
+			for (var i = 0; i < rows; i++) {
+				for (var j = 0; j < columns; j++) {
+					grid[i][j].blockData.desiredState = grid[i][j].blockData.state
+				}
 			}
 		}
 	}
 		
 	var nearestBlock = instance_nearest(mouse_x-blockSize/2, mouse_y-blockSize/2, Obj_Block)
-	if position_meeting(mouse_x, mouse_y, nearestBlock) {
+	if (nearestBlock.blockData.onGrid && position_meeting(mouse_x, mouse_y, nearestBlock)) {
 		gridLinesX = nearestBlock.x
 		gridLinesY = nearestBlock.y
 	} else {
