@@ -20,13 +20,15 @@ function GenerateGrid(r, c){
 
 	// Y Labels
 	for(var i = 0; i < r; i++){
-		var numList = string_split(numberLabels[i], "0")
-		for(var j = 0; j < array_length(numList); j++){
-			if string_length(numList[j]) > 0
-				numberLabelsY[i] += (" " + string(string_length(numList[j])))
-		}
-		if numberLabelsY[i] = ""
+		if string_pos("1", numberLabels[i]) == 0 {
 			numberLabelsY[i] = "0"
+		} else {
+			var numList = string_split(numberLabels[i], "0")
+			for(var j = 0; j < array_length(numList); j++){
+				if string_length(numList[j]) > 0
+					numberLabelsY[i] += (" " + string(string_length(numList[j])))
+			}
+		}
 	}
 
 	// X Labels
@@ -35,14 +37,16 @@ function GenerateGrid(r, c){
 		for(var j = 0; j < r; j++){
 			numbers += string(string_copy(numberLabels[j], i+1, 1))
 		}
-	
-		var numList = string_split(numbers, "0")
-		for(var j = 0; j < array_length(numList); j++){
-			if string_length(numList[j]) > 0
-				numberLabelsX[i] += (string(string_length(numList[j])) + "\n")
+		
+		if string_pos("1", numbers) == 0 {
+			numberLabelsX[i] = "0"
+		} else {
+			var numList = string_split(numbers, "0")
+			for(var j = 0; j < array_length(numList); j++){
+				if string_length(numList[j]) > 0
+					numberLabelsX[i] += (string(string_length(numList[j])) + "\n")
+			}
 		}
-		if numberLabelsY[i] = ""
-			numberLabelsY[i] = "0"
 	}
 	
 	with instance_create_layer(x, y, "Instances", Obj_GridFrame) {
