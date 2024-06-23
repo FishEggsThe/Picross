@@ -1,8 +1,8 @@
 x = 0
 y = 0
 
-view_width = 500
-view_height = 500
+view_width = room_width
+view_height = room_height
 view_scale = 2
 
 window_set_size(view_width*view_scale, view_height*view_scale)

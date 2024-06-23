@@ -2,8 +2,8 @@ event_inherited()
 
 roomID = 1
 buttonText = "Start\nGame"
-rowSize = 5
-columnSize = 5
+rowSize = 10
+columnSize = 10
 
 goto_room = function(r) {
 	SetGridSize(rowSize, columnSize)
