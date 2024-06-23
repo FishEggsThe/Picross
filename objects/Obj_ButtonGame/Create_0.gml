@@ -5,7 +5,7 @@ buttonText = "Start\nGame"
 rowSize = 10
 columnSize = 10
 
-goto_room = function(r) {
+button_do = function() {
 	SetGridSize(rowSize, columnSize)
-	room_goto(r)
+	room_goto(roomID)
 }

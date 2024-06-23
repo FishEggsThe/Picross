@@ -39,13 +39,3 @@ if !gridComplete {
 else {
 	ResetGridLines()
 }
-	
-
-// Grid Complete Text
-draw_set_halign(fa_center)
-if gridComplete{
-	completeTextSize = clamp(completeTextSize+completeTextSizeIncrease, 0, completeTextSizeMax)
-
-	draw_text_transformed(room_width/2, room_height/2, "Grid Complete!!!", 
-						  completeTextSize, completeTextSize, sin(current_time))
-}

@@ -19,8 +19,8 @@ numberLabelsY = array_create(rows, "")
 
 gridComplete = false
 completeTextSize = 0
-completeTextSizeMax = 2.5*(columns/5)
-completeTextSizeIncrease = 0.025*(columns/5)
+completeTextSizeMax = 2.5
+completeTextSizeIncrease = 0.025
 gridLinesX = -100000
 gridLinesY = -100000
 

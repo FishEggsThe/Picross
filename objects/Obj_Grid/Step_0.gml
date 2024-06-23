@@ -15,6 +15,7 @@ if !gridComplete {
 				}
 			}
 		} 
+		
 		else { // room == Rm_GridCreate
 			for (var i = 0; i < rows; i++) {
 				for (var j = 0; j < columns; j++) {

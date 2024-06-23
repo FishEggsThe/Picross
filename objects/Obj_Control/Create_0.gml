@@ -6,4 +6,4 @@ if instance_number(Obj_Control) > 1 {
 global.debug = false
 
 rowNum = 5
-columnNum = 15
+columnNum = 5

@@ -5,7 +5,7 @@ buttonText = "Create\nGrid"
 rowSize = 5
 columnSize = 5
 
-goto_room = function(r) {
+button_do = function() {
 	SetGridSize(rowSize, columnSize)
-	room_goto(r)
+	room_goto(roomID)
 }
