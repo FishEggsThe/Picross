@@ -1,15 +1,14 @@
-function Block(ds, c, g) constructor
+function Block(ds, c) constructor
 {
     desiredState = ds;
 	// color = c
     blockColor = (desiredState ? c_black : c_white);
 	state = 0
 	sprite = Spr_BlockTest
-	onGrid = g
 
-    static ChangeState = function(changeState)
+    static ChangeState = function(changeState, revert)
     {
-        if state == changeState
+        if (state == changeState && revert)
 			state = 0
 		else
 			state = changeState
@@ -37,9 +36,9 @@ function Block(ds, c, g) constructor
 	}
 }
 
-function CreateBlock(bX, bY, ds, c, g)
+function CreateBlock(bX, bY, ds, c)
 {
 	var block = instance_create_layer(bX, bY, "Instances", Obj_Block)
-	block.blockData = new Block(ds, c, g)
+	block.blockData = new Block(ds, c)
 	return block;
 }

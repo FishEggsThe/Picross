@@ -11,7 +11,7 @@ function GenerateGrid(r, c){
 		for(var j = 0; j < c; j++){
 			var xOffset = j*blockSize
 			var yOffset = i*blockSize
-			grid[i][j] = CreateBlock(x+xOffset, y+yOffset, choose(true, false), c_black, true)
+			grid[i][j] = CreateBlock(x+xOffset, y+yOffset, choose(true, false), c_black)
 			numbers += string(grid[i][j].blockData.desiredState)
 		}
 	

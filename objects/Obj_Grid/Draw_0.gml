@@ -16,7 +16,7 @@ if room == Rm_GridGame {
 }
 
 // Divide Grid by 5's
-draw_set_color(c_dkgray)
+draw_set_color(c_navy)
 for(var i = 5; i < columns; i+=5){
 	draw_line_width(offset+blockSize*i, offset, offset+blockSize*i, offset+blockSize*rows, 6)
 }

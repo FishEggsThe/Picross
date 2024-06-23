@@ -5,13 +5,25 @@ if !gridComplete {
 		gridLinesX = nearestBlock.x
 		gridLinesY = nearestBlock.y
 		
-		if mouse_check_button_pressed(mb_left)
-			nearestBlock.blockData.ChangeState(1)
-		else if mouse_check_button_pressed(mb_right)
-			nearestBlock.blockData.ChangeState(2)
-	} else {
+		if mouse_check_button_pressed(mb_left){
+			nearestBlock.blockData.ChangeState(1, true)
+			markManyBlocks = nearestBlock.blockData.state
+		} else if mouse_check_button_pressed(mb_right) {
+			nearestBlock.blockData.ChangeState(2, true)
+			markManyBlocks = nearestBlock.blockData.state
+		}
+		
+		if mouse_check_button(mb_left) {
+			
+			if markManyBlocks > -1
+			nearestBlock.blockData.ChangeState(markManyBlocks, false)
+			else
+				markManyBlocks = 0
+		}
+		
+	} else
 		ResetGridLines()
-	}
+	
 	
 	if mouse_check_button_pressed(mb_left) {
 		if (room == Rm_GridGame) {
