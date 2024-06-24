@@ -39,6 +39,7 @@
     {"id":{"name":"Obj_Block","path":"objects/Obj_Block/Obj_Block.yy",},},
     {"id":{"name":"Obj_Button","path":"objects/Obj_Button/Obj_Button.yy",},},
     {"id":{"name":"Obj_ButtonCreate","path":"objects/Obj_ButtonCreate/Obj_ButtonCreate.yy",},},
+    {"id":{"name":"Obj_ButtonCreateColor","path":"objects/Obj_ButtonCreateColor/Obj_ButtonCreateColor.yy",},},
     {"id":{"name":"Obj_ButtonCreateSwitch","path":"objects/Obj_ButtonCreateSwitch/Obj_ButtonCreateSwitch.yy",},},
     {"id":{"name":"Obj_ButtonGame","path":"objects/Obj_ButtonGame/Obj_ButtonGame.yy",},},
     {"id":{"name":"Obj_ButtonMenu","path":"objects/Obj_ButtonMenu/Obj_ButtonMenu.yy",},},
