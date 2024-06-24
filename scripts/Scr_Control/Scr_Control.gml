@@ -28,22 +28,35 @@ function CreateGridCode(rows, columns, grid) {
 function TranslateGridCode(code) {
 	// See CreateGridCode function for a good idea how it'll be translated
 	with Obj_Control {
+		var error_message = "This code is STUPID AND UGLY, go back to code school and become WORTHY OF ENTRY"
 		var info = string_split(code, "&")
+		if string_length(code) != info[0]*info[1] {
+			show_message(error_message)
+			return 0
+		}
 	
-			rowNum = info[0]
-			columnNum = info[1]
+		rowNum = info[0]
+		columnNum = info[1]
 	
-		blockArray = array_create_ext(rows, function() {
-			return array_create(columns, noone)
+		var infoBlocks = array_create_ext(rowNum, function() {
+			return array_create(columnNum, noone)
 		})
 		var index = 0
-		for(var i = 0; rowNum; i++) {
-			for(var j = 0; columnNum; j++) {
-				infoState = real(string_char_at(info[2], index))
-				infoColor = string_pos(string_char_at(info[2], index+1), global.base_twenty)
-				blockArray[i][j] = new Block(infoState, infoColor)
-				index+=2
+		try {
+			for(var i = 0; rowNum; i++) {
+				for(var j = 0; columnNum; j++) {
+					infoState = real(string_char_at(info[2], index))
+					infoColor = string_pos(string_char_at(info[2], index+1), global.base_twenty)
+					infoBlocks[i][j] = new Block(infoState, infoColor)
+					index+=2
+				}
 			}
+		} catch(errorlol) {
+			show_message(error_message)
+			return 0
 		}
+		
+		blockArray = infoBlocks
+		return 1
 	}
 }
