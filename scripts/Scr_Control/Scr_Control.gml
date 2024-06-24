@@ -17,10 +17,11 @@ function CreateGridCode(rows, columns, grid) {
 	for(var i = 0; rows; i++) {
 		for(var j = 0; columns; j++) {
 			grid_code += string(grid[i][j].blockData.state)
+			grid_code += string_char_at(global.base_twenty, grid[i][j].blockData.blockColor)
 		}
-		
 	}
 	
+	show_debug_message(grid_code)
 	return grid_code
 }
 
