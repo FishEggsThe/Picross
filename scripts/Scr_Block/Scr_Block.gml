@@ -1,7 +1,7 @@
 function Block(ds, c) constructor
 {
     desiredState = ds;
-	// color = c
+	// blockColorI = c
     blockColorI = (desiredState ? 0 : 1);
 	state = 0
 	sprite = Spr_BlockTest

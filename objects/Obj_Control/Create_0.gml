@@ -15,4 +15,4 @@ global.colors = [make_colour_rgb(0,0,0), #FFFFFF, #7F7F7F, #C3C3C3,
 				 #22B14C, #B5E61D, #00A2E8, #99D9EA,
 				 #3F48CC, #7092BE, #A349A4, #C8BFE7]
 
-global.base_twenty = "0123456789abcdefghij"
+global.base_twenty = "0123456789ABCDEFGHIJ"
