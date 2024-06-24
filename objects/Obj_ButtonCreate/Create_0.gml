@@ -2,8 +2,8 @@ event_inherited()
 
 roomID = 2
 buttonText = "Create\nGrid"
-rowSize = 15
-columnSize = 10
+rowSize = 5
+columnSize = 5
 
 button_do = function() {
 	SetGrid(rowSize, columnSize)

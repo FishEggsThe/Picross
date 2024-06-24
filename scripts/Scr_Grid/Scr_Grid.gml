@@ -17,8 +17,11 @@ function GenerateGrid(r, c){
 		for(var j = 0; j < c; j++){
 			var xOffset = j*blockSize
 			var yOffset = i*blockSize
-			
-			grid[i][j] = CreateBlock(x+xOffset, y+yOffset, choose(true, false), c_white)
+			if room == Rm_GridCreate
+				grid[i][j] = CreateBlock(x+xOffset, y+yOffset, choose(true, false), c_white)
+			else
+				grid[i][j] = CreateBlock(x+xOffset, y+yOffset, gridInfo[i][j].desiredState, gridInfo[i][j].blockColorI)
+
 			
 			//grid[i][j] = CreateBlock(x+xOffset, y+yOffset, gridInfo[i][j][0], gridInfo[i][j][1])
 			numbers += string(grid[i][j].blockData.desiredState)
