@@ -1,11 +1,9 @@
 function SetGrid(rows, columns) {
-	//TranslateGridCode(code)
 	
 	with Obj_Control {
 		rowNum = rows
 		columnNum = columns
-		//blockArray = theGrid
-})
+		blockArray = noone
 	}
 }
 
@@ -42,7 +40,7 @@ function TranslateGridCode(code) {
 		for(var i = 0; rowNum; i++) {
 			for(var j = 0; columnNum; j++) {
 				infoState = real(string_char_at(info[2], index))
-				infoColor = string_char_at(info[2], index+1)
+				infoColor = string_pos(string_char_at(info[2], index+1), global.base_twenty)
 				blockArray[i][j] = new Block(infoState, infoColor)
 				index+=2
 			}

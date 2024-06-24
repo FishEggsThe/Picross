@@ -16,3 +16,4 @@ global.colors = [make_colour_rgb(0,0,0), #FFFFFF, #7F7F7F, #C3C3C3,
 				 #3F48CC, #7092BE, #A349A4, #C8BFE7]
 
 global.base_twenty = "0123456789ABCDEFGHIJ"
+global.alphabet = "abcdefghijklmnopqrstuvwxyz"
