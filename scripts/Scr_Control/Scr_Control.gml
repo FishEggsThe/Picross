@@ -14,10 +14,10 @@ function CreateGridCode(rows, columns, grid) {
 	grid_code += string(rows) + "&" + string(columns) + "&"
 	
 	// 2) Each block's desired state and color from left to right, up to down
-	for(var i = 0; rows; i++) {
-		for(var j = 0; columns; j++) {
+	for(var i = 0; i < rows; i++) {
+		for(var j = 0; j < columns; j++) {
 			grid_code += string(grid[i][j].blockData.state)
-			grid_code += string_char_at(global.base_twenty, grid[i][j].blockData.blockColor)
+			grid_code += string_char_at(global.base_twenty, Obj_Grid.grid[i][j].blockData.blockColorI)
 		}
 	}
 	
