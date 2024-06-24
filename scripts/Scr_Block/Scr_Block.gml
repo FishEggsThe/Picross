@@ -13,29 +13,29 @@ function Block(ds, c) constructor
     {
         if (state == changeState && revert)
 			state = 0
-		else
+		else if state != changeState
 			state = changeState
 		
 		switch (state){
 			case 0:
 				sprite = Spr_BlockTest
-				show_debug_message("Normal!")
+				//show_debug_message("Normal!")
 				break
 			case 1:
 				sprite = Spr_BlockSmashedTest
-				show_debug_message("Smashed!")
+				//show_debug_message("Smashed!")
 				break
 			case 2:
-				if room != Rm_GridGame
+				if room == Rm_GridCreate
 					break
 				sprite = Spr_BlockMarkedTest
-				show_debug_message("Marked!")
+				//show_debug_message("Marked!")
 				break
 		}
     }
-	static ChangeColorState = function()
+	static ChangeColorState = function(set)
 	{
-		setColor = !setColor
+		setColor = set
 	}
 	static DrawBlock = function(bX, bY)
 	{

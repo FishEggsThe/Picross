@@ -7,3 +7,4 @@ global.debug = false
 
 rowNum = 5
 columnNum = 5
+blockArray = noone

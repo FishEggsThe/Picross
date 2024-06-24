@@ -1,7 +1,16 @@
-function SetGridSize(row, column) {
+function SetGrid(row, column, blockA) {
+	//TranslateGridCode(code)
+	
 	with Obj_Control {
 		rowNum = row
 		columnNum = column
+		blockArray = blockA
+		
+		if blockArray == noone {
+			blockArray = array_create_ext(rowNum, function() {
+				return array_create(columnNum, [false, c_white])
+			})
+		}
 	}
 }
 
@@ -25,6 +34,6 @@ function CreateGridCode(row, column, blocks) {
 	return grid_code
 }
 
-function TranslateGridCode() {
+function TranslateGridCode(code) {
 	// See CreateGridCode function for a good idea how it'll be translated
 }

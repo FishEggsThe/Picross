@@ -5,9 +5,13 @@ if instance_number(Obj_Grid) > 1 {
 
 rows = Obj_Control.rowNum
 columns = Obj_Control.columnNum
+gridInfo = Obj_Control.blockArray
+
 roomSize = (rows >= columns ? rows : columns)
 blockSize = sprite_width
 offset = 3*blockSize
+
+
 x = offset; y = offset
 room_width = (roomSize+4)*blockSize
 room_height = (roomSize+4)*blockSize
@@ -18,6 +22,7 @@ numberLabelsX = array_create(columns, "")
 numberLabelsY = array_create(rows, "")
 
 gridComplete = false
+
 completeTextSize = 0
 completeTextSizeMax = 2.5
 completeTextSizeIncrease = 0.025

@@ -22,7 +22,7 @@ if !gridComplete {
 			if markManyBlocks > -1
 			nearestBlock.blockData.ChangeState(markManyBlocks, false)
 			else
-				markManyBlocks = 0
+				markManyBlocks = -1
 		}
 		
 	} else
@@ -46,6 +46,7 @@ if !gridComplete {
 							gridComplete = false
 				}
 			}
+			colorMode = gridComplete
 		} 
 		
 		else { // room == Rm_GridCreate
@@ -57,3 +58,5 @@ if !gridComplete {
 		}
 	}
 }
+
+SetBlockColors(colorMode)

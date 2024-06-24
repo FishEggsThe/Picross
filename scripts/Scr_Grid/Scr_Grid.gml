@@ -4,6 +4,12 @@ function ResetGridLines()
 	gridLinesY = -100000
 }
 
+function SetBlockColors(colorState)
+{
+	with Obj_Block
+		blockData.ChangeColorState(colorState)
+}
+
 function GenerateGrid(r, c){
 	// Grid Creation
 	for(var i = 0; i < r; i++){
@@ -11,7 +17,9 @@ function GenerateGrid(r, c){
 		for(var j = 0; j < c; j++){
 			var xOffset = j*blockSize
 			var yOffset = i*blockSize
-			grid[i][j] = CreateBlock(x+xOffset, y+yOffset, choose(true, false), c_black)
+			
+			grid[i][j] = CreateBlock(x+xOffset, y+yOffset, choose(true, false), c_white)
+			//grid[i][j] = CreateBlock(x+xOffset, y+yOffset, gridInfo[i][j][0], gridInfo[i][j][1])
 			numbers += string(grid[i][j].blockData.desiredState)
 		}
 	
