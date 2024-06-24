@@ -6,6 +6,6 @@ rowSize = 15
 columnSize = 10
 
 button_do = function() {
-	SetGrid(rowSize, columnSize, noone)
+	SetGrid(rowSize, columnSize)
 	room_goto(roomID)
 }

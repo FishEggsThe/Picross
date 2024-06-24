@@ -1,32 +1,22 @@
-function SetGrid(row, column, blockA) {
+function SetGrid(rows, columns) {
 	//TranslateGridCode(code)
 	
 	with Obj_Control {
-		rowNum = row
-		columnNum = column
-		blockArray = blockA
-		
-		if blockArray == noone {
-			blockArray = array_create_ext(rowNum, function() {
-				return array_create(columnNum, [false, c_white])
-			})
-		}
+		rowNum = rows
+		columnNum = columns
 	}
 }
 
-function CreateGridCode(row, column, blocks) {
+function CreateGridCode(rows, columns, grid) {
 	var grid_code = ""
 	// Say we have a 2x2 grid, the code would be in three parts
-	// 1) The grid matrix (2x2)
-	
-	
-	// 2) The seperator
-	grid_code += "&"
+	// 1) The grid matrix (2x2)               2) The seperator
+	grid_code += string(rows) + "x" + string(columns) + "&"
 	
 	// 3) Each block's desired state and color from left to right, up to down
-	for(var i = 0; row; i++) {
-		for(var j = 0; column; j++) {
-			var lol = blocks[i][j].blockData.state
+	for(var i = 0; rows; i++) {
+		for(var j = 0; columns; j++) {
+			grid_code += string(grid[i][j].blockData.state)
 		}
 		
 	}

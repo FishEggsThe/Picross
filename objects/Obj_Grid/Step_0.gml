@@ -17,13 +17,11 @@ if !gridComplete {
 			markManyBlocks = nearestBlock.blockData.state
 		}
 		
-		if mouse_check_button(mb_left) {
-			
-			if markManyBlocks > -1
+		if ((mouse_check_button(mb_left) || mouse_check_button(mb_right)) && markManyBlocks > -1)
 			nearestBlock.blockData.ChangeState(markManyBlocks, false)
-			else
-				markManyBlocks = -1
-		}
+		else
+			markManyBlocks = -1
+		
 		
 	} else
 		ResetGridLines()
