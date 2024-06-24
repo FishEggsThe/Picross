@@ -1,3 +1,6 @@
 event_inherited()
 
-x = (Obj_Grid.colorMode ? oX : -100000)
+if Obj_Grid.colorMode {
+	x = oX
+} else
+	x = -100000

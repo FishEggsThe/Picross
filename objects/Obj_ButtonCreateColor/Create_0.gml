@@ -2,6 +2,7 @@ event_inherited()
 
 buttonText = ""
 oX = x
+colorIndex = 0
 
 button_do = function() {
 	Obj_Grid.colorMode = !Obj_Grid.colorMode
