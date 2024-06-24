@@ -9,8 +9,8 @@
   "name":"Obj_GridFrame",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Grid Stuff",
+    "path":"folders/Objects/Grid Stuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

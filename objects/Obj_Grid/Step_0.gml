@@ -6,8 +6,12 @@ if !gridComplete {
 		gridLinesY = nearestBlock.y
 		
 		if mouse_check_button_pressed(mb_left){
-			nearestBlock.blockData.ChangeState(1, true)
-			markManyBlocks = nearestBlock.blockData.state
+			if(room == Rm_GridCreate && colorMode) {
+				nearestBlock.blockData.color = c_white
+			} else {
+				nearestBlock.blockData.ChangeState(1, true)
+				markManyBlocks = nearestBlock.blockData.state
+			}
 		} else if mouse_check_button_pressed(mb_right) {
 			nearestBlock.blockData.ChangeState(2, true)
 			markManyBlocks = nearestBlock.blockData.state
