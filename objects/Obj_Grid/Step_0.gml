@@ -7,7 +7,7 @@ if !gridComplete {
 		
 		if mouse_check_button_pressed(mb_left){
 			if(room == Rm_GridCreate && colorMode) {
-				nearestBlock.blockData.color = c_white
+				nearestBlock.blockData.color = c_black
 			} else {
 				nearestBlock.blockData.ChangeState(1, true)
 				markManyBlocks = nearestBlock.blockData.state
@@ -30,20 +30,26 @@ if !gridComplete {
 	if mouse_check_button_pressed(mb_left) {
 		if (room == Rm_GridGame) {
 			gridComplete = true
+			show_debug_message("Why the fuck")
 			
 			for (var i = 0; i < rows; i++) {
 				for (var j = 0; j < columns; j++) {
 					
 					var gridBlock = grid[i][j].blockData
-					if gridBlock.desiredState
-						if gridBlock.state != 1
+					if gridBlock.desiredState {
+						if gridBlock.state != 1 {
 							gridComplete = false
+						}
+					}
 				
-					if !gridBlock.desiredState
-						if gridBlock.state == 1
+					if !gridBlock.desiredState {
+						if gridBlock.state == 1 {
 							gridComplete = false
+						}
+					}
 				}
 			}
+			show_debug_message(gridComplete)
 			colorMode = gridComplete
 		} 
 		
