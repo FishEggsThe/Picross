@@ -46,6 +46,7 @@
     {"id":{"name":"Obj_ButtonGame","path":"objects/Obj_ButtonGame/Obj_ButtonGame.yy",},},
     {"id":{"name":"Obj_ButtonMenu","path":"objects/Obj_ButtonMenu/Obj_ButtonMenu.yy",},},
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
+    {"id":{"name":"Obj_ColorButtons","path":"objects/Obj_ColorButtons/Obj_ColorButtons.yy",},},
     {"id":{"name":"Obj_Control","path":"objects/Obj_Control/Obj_Control.yy",},},
     {"id":{"name":"Obj_Grid","path":"objects/Obj_Grid/Obj_Grid.yy",},},
     {"id":{"name":"Obj_GridFrame","path":"objects/Obj_GridFrame/Obj_GridFrame.yy",},},

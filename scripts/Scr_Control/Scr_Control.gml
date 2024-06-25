@@ -18,7 +18,7 @@ function CreateGridCode(rows, columns, grid) {
 		for(var j = 0; j < columns; j++) {
 			grid_code += string(grid[i][j].blockData.state)
 			//grid_code += string_char_at(global.base_twenty, Obj_Grid.grid[i][j].blockData.blockColorI)
-			grid_code += string(grid[i][j].blockData.state)
+			grid_code += string(grid[i][j].blockData.blockColorI)
 		}
 	}
 	
@@ -49,7 +49,7 @@ function TranslateGridCode(code) {
 			for(var j = 0; j < columnNum; j++) {
 				show_debug_message(string(index/2) + " " + string_copy(info[2], index, 2))
 				var infoState = real(string_copy(info[2], index, 1))
-				var infoColor = string_pos(string_copy(info[2], index+1, 1), global.base_twenty)
+				var infoColor = string_pos(string_copy(info[2], index+1, 1), global.base_twenty)-1
 				infoBlocks[i][j] = new Block(infoState, infoColor)
 				index+=2
 			}

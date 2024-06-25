@@ -9,3 +9,9 @@ if gridComplete{
 	draw_text_transformed(guiWidth/2, guiHeight/2, "Grid Complete!!!", 
 						  completeTextSize, completeTextSize, sin(current_time))
 }
+
+if global.debug {
+	draw_set_halign(fa_left)
+	draw_set_valign(fa_top)
+	draw_text(2, 2, pickedColor)
+}

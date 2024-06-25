@@ -31,6 +31,7 @@ gridLinesY = -100000
 markManyBlocks = 0
 
 colorMode = false
+pickedColor = 0
 
 
 // Grid Creation

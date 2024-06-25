@@ -1,8 +1,7 @@
 function Block(ds, c) constructor
 {
     desiredState = ds;
-	// blockColorI = c
-    blockColorI = (desiredState ? 0 : 1);
+	blockColorI = c
 	state = 0
 	sprite = Spr_BlockTest
 	size = sprite_get_width(sprite)
@@ -40,12 +39,12 @@ function Block(ds, c) constructor
 	static DrawBlock = function(bX, bY)
 	{
 		draw_set_valign(fa_middle)
-
-		if setColor {gpu_set_fog(true, global.colors[blockColorI], 0, 1000)}
-		draw_sprite_ext(sprite, 0, bX, bY, 
-						1, 1, 0, 
-						c_white, 1)
-		gpu_set_fog(false, global.colors[blockColorI], 0, 1000)
+		show_debug_message(blockColorI)
+		var colorI = 1
+		if setColor {colorI = blockColorI}
+		draw_sprite_ext(sprite, 0, bX, bY, 1, 1, 0, 
+						global.colors[colorI], 1)
+		//gpu_set_fog(false, fogColor, 0, 1000)
 				
 		draw_set_color(c_red)
 		if global.debug
