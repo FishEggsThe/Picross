@@ -45,17 +45,18 @@ function Block(ds, c) constructor
 	{
 		draw_set_valign(fa_middle)
 		var blockColor = global.colors[1]
+		if setColor {blockColor = global.colors[blockColorI]}
 		var blockAlpha = 1
-		if setColor {
-			blockColor = global.colors[blockColorI]
-			blockAlpha = 0.5 * (room == Rm_GridCreate)
-			gpu_set_fog(true, blockColor, 0, 1000)
-		}
+		
+		gpu_set_fog(setColor, blockColor, 0, 1000)
+		
 		draw_sprite_ext(sprite, 0, bX, bY, 1, 1, 0, 
 						blockColor, 1)
 		gpu_set_fog(false, blockColor, 0, 1000)
-		draw_sprite_ext(sprite, 0, bX, bY, 1, 1, 0, 
-						blockColor, blockAlpha)
+		
+		if room == Rm_GridCreate
+			draw_sprite_ext(sprite, 0, bX, bY, 1, 1, 0, 
+							global.colors[blockColorI], 0.25)
 				
 		draw_set_color(c_red)
 		if global.debug

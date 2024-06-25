@@ -43,6 +43,7 @@
     {"id":{"name":"Obj_ButtonCreate","path":"objects/Obj_ButtonCreate/Obj_ButtonCreate.yy",},},
     {"id":{"name":"Obj_ButtonCreateCode","path":"objects/Obj_ButtonCreateCode/Obj_ButtonCreateCode.yy",},},
     {"id":{"name":"Obj_ButtonCreateColor","path":"objects/Obj_ButtonCreateColor/Obj_ButtonCreateColor.yy",},},
+    {"id":{"name":"Obj_ButtonCreateGridSize","path":"objects/Obj_ButtonCreateGridSize/Obj_ButtonCreateGridSize.yy",},},
     {"id":{"name":"Obj_ButtonCreateSwitch","path":"objects/Obj_ButtonCreateSwitch/Obj_ButtonCreateSwitch.yy",},},
     {"id":{"name":"Obj_ButtonGame","path":"objects/Obj_ButtonGame/Obj_ButtonGame.yy",},},
     {"id":{"name":"Obj_ButtonGameCode","path":"objects/Obj_ButtonGameCode/Obj_ButtonGameCode.yy",},},

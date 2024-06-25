@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_ButtonGame",
+  "%Name":"Obj_ButtonCreateGridSize",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_ButtonGame",
+  "name":"Obj_ButtonCreateGridSize",
   "overriddenProperties":[],
   "parent":{
     "name":"Buttons",
