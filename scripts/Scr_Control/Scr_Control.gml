@@ -18,7 +18,7 @@ function CreateGridCode(rows, columns, grid) {
 		for(var j = 0; j < columns; j++) {
 			grid_code += string(grid[i][j].blockData.state)
 			//grid_code += string_char_at(global.base_twenty, Obj_Grid.grid[i][j].blockData.blockColorI)
-			grid_code += string(grid[i][j].blockData.blockColorI)
+			grid_code += string_copy(global.base_twenty, grid[i][j].blockData.blockColorI+1, 1)
 		}
 	}
 	
