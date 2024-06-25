@@ -44,20 +44,21 @@ function TranslateGridCode(code) {
 			return array_create(columnNum, noone)
 		})
 		var index = 1
-		//try {
-		for(var i = 0; i < rowNum; i++) {
-			for(var j = 0; j < columnNum; j++) {
-				show_debug_message(string(index/2) + " " + string_copy(info[2], index, 2))
-				var infoState = real(string_copy(info[2], index, 1))
-				var infoColor = string_pos(string_copy(info[2], index+1, 1), global.base_twenty)-1
-				infoBlocks[i][j] = new Block(infoState, infoColor)
-				index+=2
+		try {
+			for(var i = 0; i < rowNum; i++) {
+				for(var j = 0; j < columnNum; j++) {
+					show_debug_message(string(index/2) + " " + string_copy(info[2], index, 2))
+					var infoState = real(string_copy(info[2], index, 1))
+					var infoColor = string_pos(string_copy(info[2], index+1, 1), global.base_twenty)-1
+					infoBlocks[i][j] = new Block(infoState, infoColor)
+					index+=2
+				}
 			}
+		} catch(errorlol) {
+			show_message(error_message)
+			show_debug_message(errorlol)
+			return 0
 		}
-		//} catch(errorlol) {
-		//	show_message(error_message)
-		//	return 0
-		//}
 		
 		blockArray = infoBlocks
 		return 1

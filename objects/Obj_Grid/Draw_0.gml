@@ -30,9 +30,9 @@ draw_set_color(c_red)
 if !gridComplete {
 	var lw = 2
 	for(var i = 0; i < 2; i++) {
-		// X
+		// Vertical Lines
 		draw_line_width(gridLinesX+blockSize*i, offset-blockSize, gridLinesX+blockSize*i, offset+blockSize*rows, lw)
-		// Y
+		// Horizontal Lines
 		draw_line_width(offset-blockSize, gridLinesY+blockSize*i, offset+blockSize*columns, gridLinesY+blockSize*i, lw)
 	}
 }
