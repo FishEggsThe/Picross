@@ -31,20 +31,21 @@ function TranslateGridCode(code) {
 	with Obj_Control {
 		var error_message = "This code is STUPID and UGLY, go back to code school and become WORTHY OF ENTRY"
 		var info = string_split(code, "&")
-	
-		rowNum = real(info[0])
-		columnNum = real(info[1])
-		if string_length(info[2])/2 != (rowNum*columnNum) {
-			show_message(error_message)
-			show_debug_message(string_length(info[2]))
-			return 0
-		}
-	
-		var infoBlocks = array_create_ext(rowNum, function() {
-			return array_create(columnNum, noone)
-		})
-		var index = 1
 		try {
+	
+			rowNum = real(info[0])
+			columnNum = real(info[1])
+			if string_length(info[2])/2 != (rowNum*columnNum) {
+				show_message(error_message)
+				show_debug_message(string_length(info[2]))
+				return 0
+			}
+	
+			var infoBlocks = array_create_ext(rowNum, function() {
+				return array_create(columnNum, noone)
+			})
+			var index = 1
+			
 			for(var i = 0; i < rowNum; i++) {
 				for(var j = 0; j < columnNum; j++) {
 					show_debug_message(string(index/2) + " " + string_copy(info[2], index, 2))
@@ -54,13 +55,14 @@ function TranslateGridCode(code) {
 					index+=2
 				}
 			}
+			
+			blockArray = infoBlocks
 		} catch(errorlol) {
 			show_message(error_message)
 			show_debug_message(errorlol)
 			return 0
 		}
 		
-		blockArray = infoBlocks
 		return 1
 	}
 }

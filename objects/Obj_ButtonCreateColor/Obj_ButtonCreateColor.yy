@@ -10,8 +10,8 @@
   "name":"Obj_ButtonCreateColor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Create Room",
-    "path":"folders/Objects/Buttons/Create Room.yy",
+    "name":"Create Buttons",
+    "path":"folders/Objects/Buttons/Create Buttons.yy",
   },
   "parentObjectId":{
     "name":"Obj_Button",

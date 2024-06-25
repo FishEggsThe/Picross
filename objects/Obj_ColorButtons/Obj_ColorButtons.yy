@@ -8,8 +8,8 @@
   "name":"Obj_ColorButtons",
   "overriddenProperties":[],
   "parent":{
-    "name":"Create Room",
-    "path":"folders/Objects/Buttons/Create Room.yy",
+    "name":"Create Buttons",
+    "path":"folders/Objects/Buttons/Create Buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
