@@ -32,6 +32,11 @@ function Block(ds, c) constructor
 				break
 		}
     }
+	static ChangeColor = function(changeState)
+    {
+       if blockColorI != changeState
+			blockColorI = changeState
+    }
 	static ChangeColorState = function(set)
 	{
 		setColor = set

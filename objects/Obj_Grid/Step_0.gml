@@ -7,7 +7,8 @@ if !gridComplete {
 		
 		if mouse_check_button_pressed(mb_left){
 			if(room == Rm_GridCreate && colorMode) {
-				nearestBlock.blockData.blockColorI = pickedColor
+				nearestBlock.blockData.ChangeColor(pickedColor)
+				markManyBlocks = pickedColor
 			} else {
 				nearestBlock.blockData.ChangeState(1, true)
 				markManyBlocks = nearestBlock.blockData.state
@@ -17,9 +18,10 @@ if !gridComplete {
 			markManyBlocks = nearestBlock.blockData.state
 		}
 		
-		if ((mouse_check_button(mb_left) || mouse_check_button(mb_right)) && markManyBlocks > -1)
-			nearestBlock.blockData.ChangeState(markManyBlocks, false)
-		else
+		if ((mouse_check_button(mb_left) || mouse_check_button(mb_right)) && markManyBlocks > -1) {
+			if colorMode {nearestBlock.blockData.ChangeColor(markManyBlocks)}
+			else {nearestBlock.blockData.ChangeState(markManyBlocks, false)}
+		} else
 			markManyBlocks = -1
 		
 		
