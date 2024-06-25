@@ -39,6 +39,6 @@ grid = array_create_ext(rows, function() {
 	return array_create(columns, noone) // Wasn't recognizing variable here in script for whatever reason so back here it goes
 })
 GenerateGrid(rows, columns)
-show_debug_message(numberLabels)
-show_debug_message(numberLabelsX)
-show_debug_message(numberLabelsY)
+//show_debug_message(numberLabels)
+//show_debug_message(numberLabelsX)
+//show_debug_message(numberLabelsY)
