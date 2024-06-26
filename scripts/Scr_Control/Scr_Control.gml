@@ -14,11 +14,22 @@ function CreateGridCode(rows, columns, grid) {
 	grid_code += string(rows) + "&" + string(columns) + "&"
 	
 	// 2) Each block's desired state and color from left to right, up to down
+	// Long code way
+	//for(var i = 0; i < rows; i++) {
+	//	for(var j = 0; j < columns; j++) {
+	//		grid_code += string(grid[i][j].blockData.state)
+	//		//grid_code += string_char_at(global.base_twenty, Obj_Grid.grid[i][j].blockData.blockColorI)
+	//		grid_code += string_copy(global.base_twenty, grid[i][j].blockData.blockColorI+1, 1)
+	//	}
+	//}
+	
+	// CHAD short code way
 	for(var i = 0; i < rows; i++) {
 		for(var j = 0; j < columns; j++) {
-			grid_code += string(grid[i][j].blockData.state)
-			//grid_code += string_char_at(global.base_twenty, Obj_Grid.grid[i][j].blockData.blockColorI)
-			grid_code += string_copy(global.base_twenty, grid[i][j].blockData.blockColorI+1, 1)
+			var blockLetter = string_copy(global.alphabet, grid[i][j].blockData.blockColorI+1, 1)
+			if grid[i][j].blockData.state
+				blockLetter = string_upper(blockLetter)
+			grid_code += blockLetter
 		}
 	}
 	
@@ -35,7 +46,7 @@ function TranslateGridCode(code) {
 	
 			rowNum = real(info[0])
 			columnNum = real(info[1])
-			if string_length(info[2])/2 != (rowNum*columnNum) {
+			if string_length(info[2]) != (rowNum*columnNum) {
 				show_message(error_message)
 				show_debug_message(string_length(info[2]))
 				return 0
@@ -48,11 +59,25 @@ function TranslateGridCode(code) {
 			
 			for(var i = 0; i < rowNum; i++) {
 				for(var j = 0; j < columnNum; j++) {
-					show_debug_message(string(index/2) + " " + string_copy(info[2], index, 2))
-					var infoState = real(string_copy(info[2], index, 1))
-					var infoColor = string_pos(string_copy(info[2], index+1, 1), global.base_twenty)-1
+					//show_debug_message(string(index/2) + " " + string_copy(info[2], index, 2))
+					//var infoState = real(string_copy(info[2], index, 1))
+					//var infoColor = string_pos(string_copy(info[2], index+1, 1), global.alphabet)-1
+					//infoBlocks[i][j] = new Block(infoState, infoColor)
+					//index+=2
+					
+					codeLetter = string_copy(info[2], index, 1)
+					
+					var infoState = -1
+					if (ord(codeLetter) >= 65 && ord(codeLetter) <= 90)
+						infoState = 1
+					else if (ord(codeLetter) >= 97 && ord(codeLetter) <= 122)
+						infoState = 0
+					else
+						throw("fake ass code")
+					
+					var infoColor = string_pos(string_lower(codeLetter), global.alphabet)-1
 					infoBlocks[i][j] = new Block(infoState, infoColor)
-					index+=2
+					index++
 				}
 			}
 			
