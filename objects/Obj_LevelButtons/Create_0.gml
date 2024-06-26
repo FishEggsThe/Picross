@@ -1,14 +1,16 @@
 maxColumns = 3
 
 levels = [
+// Dog
+["Dog", "5&5&tFtttFAtttFFttttFFFFtFtFt"],
+// Boat
+["Boat", "5&5&ooFBoooFBBooFooFFFFFqFFFq"],
 // The og one
 ["Abstract", "5&5&GKQbKGQbbKbGbbGbQKbKbQQGb"],
-// Boat
-["Boat", "5&5&ooFBoooFBBooFooFFFFFqFFFq"],
-// Boat
-["Boat", "5&5&ooFBoooFBBooFooFFFFFqFFFq"],
 // Funny yellow thing
-["A Swell Day", "10&10&bbboooJoobbbooooJobboooJJoJJooooooJJJJooooooAJAJoooooJJJJJoooJJJAAJJJoooJJJoooooooJoJooooommJmJmmmmm",]]
+["A Swell Day", "10&10&bbboooJoobbbooooJobboooJJoJJooooooJJJJooooooAJAJoooooJJJJJoooJJJAAJJJoooJJJoooooooJoJooooommJmJmmmmm",],
+// THE FISH
+["Funny Fish", "15&15&kkkkkkkkkkkkkkkkkkAAAAAAAAkkkkkkkAAjAjAjAAkkkkkAAAAAAAAjAkkkkAAjjjjjjjAAkkAkAjjAAjjjjjAAAAAjAjjAAAjjjjAjAAjjjjAjAjjjjjjAAAjAjAjAjjjjjAAAjjjjAAAjjjjAjAAAjjAAjjjjjAAAAkAAjjjjjjjAAAjAkkAAAAAAAAjAkAAkkkAjAjAjAAAkkkkkkkAAAAAAAkkkk"]]
 
 //var iTwo = 0
 for(var i = 0; i < array_length(levels); i++) {

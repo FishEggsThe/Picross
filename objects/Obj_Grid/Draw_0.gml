@@ -16,18 +16,20 @@ if room == Rm_GridGame {
 }
 
 // Divide Grid by 5's
-draw_set_color(c_navy)
-for(var i = 5; i < columns; i+=5){
-	draw_line_width(offset+blockSize*i, offset, offset+blockSize*i, offset+blockSize*rows, 6)
-}
+if !colorMode {
+	draw_set_color(c_navy)
+	for(var i = 5; i < columns; i+=5){
+		draw_line_width(offset+blockSize*i, offset, offset+blockSize*i, offset+blockSize*rows, 6)
+	}
 
-for(var i = 5; i < rows; i+=5){
-	draw_line_width(offset, offset+blockSize*i, offset+blockSize*columns, offset+blockSize*i, 6)
+	for(var i = 5; i < rows; i+=5){
+		draw_line_width(offset, offset+blockSize*i, offset+blockSize*columns, offset+blockSize*i, 6)
+	}
 }
 
 // Selected Block
-draw_set_color(c_red)
 if !gridComplete {
+	draw_set_color(c_red)
 	var lw = 2
 	for(var i = 0; i < 2; i++) {
 		// Vertical Lines
