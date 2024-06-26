@@ -61,12 +61,11 @@ function TranslateGridCode(code) {
 				for(var j = 0; j < columnNum; j++) {
 					//show_debug_message(string(index/2) + " " + string_copy(info[2], index, 2))
 					//var infoState = real(string_copy(info[2], index, 1))
-					//var infoColor = string_pos(string_copy(info[2], index+1, 1), global.alphabet)-1
+					//var infoColor = string_pos(string_copy(info[2], index+1, 1), global.base_twenty)-1
 					//infoBlocks[i][j] = new Block(infoState, infoColor)
 					//index+=2
 					
-					codeLetter = string_copy(info[2], index, 1)
-					
+					var codeLetter = string_copy(info[2], index, 1)
 					var infoState = -1
 					if (ord(codeLetter) >= 65 && ord(codeLetter) <= 90)
 						infoState = 1

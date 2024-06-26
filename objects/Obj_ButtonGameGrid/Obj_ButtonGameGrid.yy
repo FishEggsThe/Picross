@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_ButtonGameCode",
+  "%Name":"Obj_ButtonGameGrid",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_ButtonGameCode",
+  "name":"Obj_ButtonGameGrid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Game Buttons",
-    "path":"folders/Objects/Buttons/Game Buttons.yy",
+    "name":"Buttons",
+    "path":"folders/Objects/Buttons.yy",
   },
   "parentObjectId":{
-    "name":"Obj_ButtonGameGrid",
-    "path":"objects/Obj_ButtonGameGrid/Obj_ButtonGameGrid.yy",
+    "name":"Obj_Button",
+    "path":"objects/Obj_Button/Obj_Button.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
