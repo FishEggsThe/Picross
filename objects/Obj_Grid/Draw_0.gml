@@ -1,6 +1,6 @@
 if room == Rm_GridGame {
 	// Top Number Labels
-	draw_set_color(c_red)
+	draw_set_color(c_black)
 	draw_set_valign(fa_top)
 	draw_set_halign(fa_center)
 	for(var i = 0; i < columns; i++){
