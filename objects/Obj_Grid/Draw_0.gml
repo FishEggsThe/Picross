@@ -32,10 +32,9 @@ if !gridComplete {
 	draw_set_color(c_red)
 	var lw = 2
 	for(var i = 0; i < 2; i++) {
-		var vExtend = string_height(numberLabelsX[numLabXIndex])
-		var hExtend = string_length(numberLabelsY[numLabYIndex])*10
-		//floor((mouse_x-x)/columns)
-		//floor((mouse_y-y)/rows)
+		var vExtend = string_height(numberLabelsX[numLabXIndex])+10
+		var hExtend = string_length(numberLabelsY[numLabYIndex])*10+10
+		if room = Rm_GridCreate { vExtend = 0; hExtend = 0 }
 		
 		// Vertical Lines
 		draw_line_width(gridLinesX+blockSize*i, x-vExtend, gridLinesX+blockSize*i, x+blockSize*rows, lw)
