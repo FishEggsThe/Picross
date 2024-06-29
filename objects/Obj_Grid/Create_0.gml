@@ -9,9 +9,8 @@ gridInfo = Obj_Control.blockArray
 
 roomSize = (rows >= columns ? rows : columns)
 blockSize = sprite_width
-offset = 3*blockSize
 
-
+var offset = 3*blockSize
 x = offset; y = offset
 room_width = (roomSize+4)*blockSize
 room_height = (roomSize+4)*blockSize
@@ -20,6 +19,8 @@ depth = -10
 numberLabels = array_create(rows, "")
 numberLabelsX = array_create(columns, "")
 numberLabelsY = array_create(rows, "")
+numLabXIndex = 0
+numLabYIndex = 0
 
 gridComplete = false
 

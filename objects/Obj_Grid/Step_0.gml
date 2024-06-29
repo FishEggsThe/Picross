@@ -4,6 +4,10 @@ if !gridComplete {
 	if position_meeting(mouse_x, mouse_y, nearestBlock) {
 		gridLinesX = nearestBlock.x
 		gridLinesY = nearestBlock.y
+		numLabXIndex = (gridLinesX-x)/blockSize
+		numLabYIndex = (gridLinesY-y)/blockSize
+		//numLabXIndex = floor((columns*(gridLinesX-x))/(10*blockSize))-1
+		//numLabYIndex = floor((rows*(gridLinesY-y))/(10*blockSize))-1
 		
 		if mouse_check_button_pressed(mb_left){
 			if(room == Rm_GridCreate && colorMode) {
