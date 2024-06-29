@@ -20,9 +20,45 @@ for(var i = -1; i < width+1; i++) {
 		var py = tilemap_get_cell_y_at_pixel(map_id, xPos, yPos);
 		
 		var tileIndex = 0
-		
-		if (i == -1 || i == width+1) {
-			//var theI = 
+		if j == -1 {
+			show_debug_message("top")
+			switch(i){
+				case -1:
+					tileIndex = 0
+					break
+				case width:
+					tileIndex = 2
+					break
+				default:
+					tileIndex = 1
+					break
+			}
+		} else if j == height {
+			show_debug_message("bottom")
+			switch(i){
+				case -1:
+					tileIndex = 6
+					break
+				case width:
+					tileIndex = 8
+					break
+				default:
+					tileIndex = 7
+					break
+			}
+		} else {
+			show_debug_message("mid")
+			switch(i){
+				case -1:
+					tileIndex = 3
+					break
+				case width:
+					tileIndex = 5
+					break
+				default:
+					tileIndex = 4
+					break
+			}
 		}
 		
 		tilemap_set(map_id, tiles[tileIndex], px, py)
