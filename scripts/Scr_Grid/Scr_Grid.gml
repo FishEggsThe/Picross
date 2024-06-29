@@ -63,3 +63,14 @@ function GenerateGrid(r, c){
 	
 	instance_create_layer(x, y, "Instances", Obj_GridFrame)
 }
+
+function DecideTileGridFrame(index, tile) {
+	switch(index){
+		case -1:
+			return tile
+		case width:
+			return tile+2
+		default:
+			return tile+1
+	}
+}

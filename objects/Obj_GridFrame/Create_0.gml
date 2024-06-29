@@ -21,44 +21,14 @@ for(var i = -1; i < width+1; i++) {
 		
 		var tileIndex = 0
 		if j == -1 {
-			show_debug_message("top")
-			switch(i){
-				case -1:
-					tileIndex = 0
-					break
-				case width:
-					tileIndex = 2
-					break
-				default:
-					tileIndex = 1
-					break
-			}
+			//show_debug_message("top")
+			tileIndex = DecideTileGridFrame(i, 0)
 		} else if j == height {
-			show_debug_message("bottom")
-			switch(i){
-				case -1:
-					tileIndex = 6
-					break
-				case width:
-					tileIndex = 8
-					break
-				default:
-					tileIndex = 7
-					break
-			}
+			//show_debug_message("bottom")
+			tileIndex = DecideTileGridFrame(i, 6)
 		} else {
-			show_debug_message("mid")
-			switch(i){
-				case -1:
-					tileIndex = 3
-					break
-				case width:
-					tileIndex = 5
-					break
-				default:
-					tileIndex = 4
-					break
-			}
+			//show_debug_message("mid")
+			tileIndex = DecideTileGridFrame(i, 3)
 		}
 		
 		tilemap_set(map_id, tiles[tileIndex], px, py)
