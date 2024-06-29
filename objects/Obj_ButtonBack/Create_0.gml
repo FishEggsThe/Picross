@@ -1,4 +1,4 @@
 event_inherited()
 
-roomID = 0
+roomID = global.lastRoom
 buttonText = "Go\nBack"

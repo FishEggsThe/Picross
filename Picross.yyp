@@ -40,6 +40,7 @@
   "resources":[
     {"id":{"name":"Obj_Block","path":"objects/Obj_Block/Obj_Block.yy",},},
     {"id":{"name":"Obj_Button","path":"objects/Obj_Button/Obj_Button.yy",},},
+    {"id":{"name":"Obj_ButtonBack","path":"objects/Obj_ButtonBack/Obj_ButtonBack.yy",},},
     {"id":{"name":"Obj_ButtonCreate","path":"objects/Obj_ButtonCreate/Obj_ButtonCreate.yy",},},
     {"id":{"name":"Obj_ButtonCreateCode","path":"objects/Obj_ButtonCreateCode/Obj_ButtonCreateCode.yy",},},
     {"id":{"name":"Obj_ButtonCreateColor","path":"objects/Obj_ButtonCreateColor/Obj_ButtonCreateColor.yy",},},
@@ -48,7 +49,6 @@
     {"id":{"name":"Obj_ButtonGame","path":"objects/Obj_ButtonGame/Obj_ButtonGame.yy",},},
     {"id":{"name":"Obj_ButtonGameCode","path":"objects/Obj_ButtonGameCode/Obj_ButtonGameCode.yy",},},
     {"id":{"name":"Obj_ButtonGameGrid","path":"objects/Obj_ButtonGameGrid/Obj_ButtonGameGrid.yy",},},
-    {"id":{"name":"Obj_ButtonMenu","path":"objects/Obj_ButtonMenu/Obj_ButtonMenu.yy",},},
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
     {"id":{"name":"Obj_ColorButtons","path":"objects/Obj_ColorButtons/Obj_ColorButtons.yy",},},
     {"id":{"name":"Obj_Control","path":"objects/Obj_Control/Obj_Control.yy",},},

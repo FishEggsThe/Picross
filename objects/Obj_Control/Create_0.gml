@@ -17,3 +17,4 @@ global.colors = [make_colour_rgb(0,0,0), #FFFFFF, #7F7F7F, #C3C3C3,
 
 global.base_twenty = "0123456789ABCDEFGHIJ"
 global.alphabet = "abcdefghijklmnopqrstuvwxyz"
+global.lastRoom = 0
