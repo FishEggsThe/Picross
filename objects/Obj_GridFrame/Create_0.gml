@@ -3,12 +3,12 @@ if instance_exists(Obj_Grid) <= 0 {
 	instance_destroy()
 }
 size = sprite_width
-width = 0
-height = 0
+width = Obj_Control.rowNum
+height = Obj_Control.columnNum
 
-tiles = [4, 28, 8, 
-		 24, 47, 16,
-		 2, 1, 20]
+tiles = [4, 1, 2, 
+		 3, 0, 5,
+		 6, 7, 8]
 
 for(var i = -1; i < width+1; i++) {
 	for(var j = -1; j < height+1; j++) {

@@ -61,8 +61,5 @@ function GenerateGrid(r, c){
 		}
 	}
 	
-	with instance_create_layer(x, y, "Instances", Obj_GridFrame) {
-		width = c
-		height = r
-	}
+	instance_create_layer(x, y, "Instances", Obj_GridFrame)
 }
