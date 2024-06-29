@@ -2,6 +2,7 @@ var guiWidth = display_get_gui_width();
 var guiHeight = display_get_gui_height();
 
 // Grid Complete Text
+draw_set_color(c_red)
 draw_set_halign(fa_center)
 if gridComplete{
 	completeTextSize = clamp(completeTextSize+completeTextSizeIncrease, 0, completeTextSizeMax)
