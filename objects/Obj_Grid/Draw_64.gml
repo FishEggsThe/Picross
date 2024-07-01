@@ -7,9 +7,7 @@ draw_set_halign(fa_center)
 if gridComplete{
 	if curvePercent < 1
 		curvePercent += CurvePercentAdd
-	var scale = animcurve_channel_evaluate(curve, curvePercent)
-	
-	completeTextSize = clamp(completeTextSize+completeTextSizeIncrease, 0, completeTextSizeMax)
+	var scale = 3*animcurve_channel_evaluate(curve, curvePercent)
 
 	draw_text_transformed(guiWidth/2, guiHeight/2, "Grid Complete!!!", 
 						  scale, scale, sin(current_time))
