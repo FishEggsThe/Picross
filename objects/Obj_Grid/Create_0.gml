@@ -35,6 +35,10 @@ drawMark = 0
 colorMode = false
 pickedColor = 0
 
+curve = animcurve_get_channel(AnCv_CompleteText, "scale")
+curvePercent = 0
+CurvePercentAdd = 1/180
+
 
 // Grid Creation
 grid = array_create_ext(rows, function() {
