@@ -38,6 +38,8 @@
   },
   "name":"Picross",
   "resources":[
+    {"id":{"name":"AnCv_CompleteText","path":"animcurves/AnCv_CompleteText/AnCv_CompleteText.yy",},},
+    {"id":{"name":"To-Do List","path":"notes/To-Do List/To-Do List.yy",},},
     {"id":{"name":"Obj_Block","path":"objects/Obj_Block/Obj_Block.yy",},},
     {"id":{"name":"Obj_Button","path":"objects/Obj_Button/Obj_Button.yy",},},
     {"id":{"name":"Obj_ButtonBack","path":"objects/Obj_ButtonBack/Obj_ButtonBack.yy",},},

@@ -1,0 +1,4 @@
+To-Do:
+ * Complete text goes away after a bit so you can see the completed art
+ * Tiles that extend to labels to make them clearer to see
+ * More Puzzles!
