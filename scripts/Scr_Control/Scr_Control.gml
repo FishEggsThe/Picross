@@ -53,7 +53,7 @@ function TranslateGridCode(code) {
 			}
 	
 			var infoBlocks = array_create_ext(rowNum, function() {
-				return array_create(columnName, noone)
+				return array_create(columnNum, noone)
 			})
 			var index = 1
 			

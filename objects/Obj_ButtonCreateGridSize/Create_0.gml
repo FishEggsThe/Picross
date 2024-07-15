@@ -10,7 +10,7 @@ creator = noone
 
 button_do = function(add)
 {
-	gridSize = clamp(gridSize+add, 5, 25)
+	gridSize = clamp(gridSize+add, 5, 15)
 	if rowOrColumn
 		creator.rowSize = gridSize
 	else
