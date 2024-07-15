@@ -13,6 +13,6 @@ button_do = function() {
 for(var i = 0; i < 2; i++)
 	with instance_create_layer(x+50*i, y+100, "Instances", Obj_ButtonCreateGridSize)
 	{
-		rowOrColumn = 1-i
+		rowOrColumn = i
 		creator = Obj_ButtonCreate
 	}
