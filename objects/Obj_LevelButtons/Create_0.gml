@@ -2,15 +2,17 @@ maxColumns = 3
 
 levels = [
 // Dog
-["Dog", "5&5&tFtttFAtttFFttttFFFFtFtFt"],
+["Level 1", "5&5&tFtttFAtttFFttttFFFFtFtFt"],
 // Boat
-["Boat", "5&5&ooFBoooFBBooFooFFFFFqFFFq"],
+["Level 2", "5&5&ooFBoooFBBooFooFFFFFqFFFq"],
 // The og one
-["Abstract", "5&5&GKQbKGQbbKbGbbGbQKbKbQQGb"],
+["Level 3", "5&5&GKQbKGQbbKbGbbGbQKbKbQQGb"],
 // Funny yellow thing
-["A Swell Day", "10&10&bbboooJoobbbooooJobboooJJoJJooooooJJJJooooooAJAJoooooJJJJJoooJJJAAJJJoooJJJoooooooJoJooooommJmJmmmmm",],
+["Level 4", "10&10&bbboooJoobbbooooJobboooJJoJJooooooJJJJooooooAJAJoooooJJJJJoooJJJAAJJJoooJJJoooooooJoJooooommJmJmmmmm"],
+// That Guy
+["Level 5", "10&15&tAAAAAAAAAAAAAtAbbbbbbbbbbbbbAAbbAbbAbAbbAbbAAbAbbbbbbbbbAbAAAbAAAAAAAAAbAAtAAAAAAAAAAAAAtttttAAtttAAtttttttttAAAAAttttttttttAtttAtttttttttAAtttAAtttt"],
 // THE FISH
-["Funny Fish", "15&15&kkkkkkkkkkkkkkkkkkAAAAAAAAkkkkkkkAAjAjAjAAkkkkkAAAAAAAAjAkkkkAAjjjjjjjAAkkAkAjjAAjjjjjAAAAAjAjjAAAjjjjAjAAjjjjAjAjjjjjjAAAjAjAjAjjjjjAAAjjjjAAAjjjjAjAAAjjAAjjjjjAAAAkAAjjjjjjjAAAjAkkAAAAAAAAjAkAAkkkAjAjAjAAAkkkkkkkAAAAAAAkkkk"]]
+["Level 6", "15&15&kkkkkkkkkkkkkkkkkkAAAAAAAAkkkkkkkAAjAjAjAAkkkkkAAAAAAAAjAkkkkAAjjjjjjjAAkkAkAjjAAjjjjjAAAAAjAjjAAAjjjjAjAAjjjjAjAjjjjjjAAAjAjAjAjjjjjAAAjjjjAAAjjjjAjAAAjjAAjjjjjAAAAkAAjjjjjjjAAAjAkkAAAAAAAAjAkAAkkkAjAjAjAAAkkkkkkkAAAAAAAkkkk"]]
 
 //var iTwo = 0
 for(var i = 0; i < array_length(levels); i++) {

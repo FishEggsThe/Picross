@@ -46,12 +46,12 @@ function Block(ds, c) constructor
 		draw_set_valign(fa_middle)
 		var blockColor = global.colors[1]
 		if setColor {blockColor = global.colors[blockColorI]}
-		var blockAlpha = 1
+		var blockAlpha = !global.debug
 		
 		gpu_set_fog(setColor, blockColor, 0, 1000)
 		
 		draw_sprite_ext(sprite, 0, bX, bY, 1, 1, 0, 
-						blockColor, 1)
+						blockColor, blockAlpha)
 		gpu_set_fog(false, blockColor, 0, 1000)
 		
 		if room == Rm_GridCreate
@@ -59,8 +59,9 @@ function Block(ds, c) constructor
 							global.colors[blockColorI], 0.25)
 				
 		draw_set_color(c_red)
-		if global.debug
+		if global.debug {
 			draw_text(bX+size/2, bY+size/2, desiredState)
+		}
 	}
 }
 

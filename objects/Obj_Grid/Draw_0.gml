@@ -48,7 +48,8 @@ else {
 
 if markManyBlocks > -1
 	drawMark = markManyBlocks
-	
-draw_set_halign(fa_right)
-draw_set_valign(fa_bottom)
-draw_text_transformed(room_width-2, room_height-2, drawMark, 2, 2, 0)
+if global.debug {	
+	draw_set_halign(fa_right)
+	draw_set_valign(fa_bottom)
+	draw_text_transformed(room_width-2, room_height-2, drawMark, 2, 2, 0)
+}
