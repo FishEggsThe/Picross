@@ -10,7 +10,7 @@ tiles = [4, 1, 2,
 		 3, 0, 5,
 		 6, 7, 8]
 
-show_message(string(room_width) + ", " + string(room_height))
+//show_message(string(room_width) + ", " + string(room_height))
 for(var i = -1; i < height+1; i++) {
 	for(var j = -1; j < width+1; j++) {
 		var xPos = x+i*size
